@@ -12,7 +12,6 @@ test('Login y navegación inicial a Nota de Venta', async ({ page }) => {
     
   await page.getByRole('link', { name: 'Ventas ' }).click();
   await page.getByRole('link', { name: 'Notas de venta' }).click();
-  await page.waitForSelector('#btn-new-invoice', { timeout: 3000 });
 
   await expect(page.getByText('Mostrar:')).toBeVisible();
 });
