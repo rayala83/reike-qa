@@ -20,13 +20,13 @@ const {firefox} = require ("playwright");
 
     await page.click('#select2-sales_note_customer_id-container');
     await page.fill('.select2-search__field', 'fa');
-    await page.click('.select2-results__option', { hasText: 'falabella' });
+    await page.click('.select2-results__option >> text=falabella');
 
     await page.selectOption('#sales_note_currency', 'pesos');    
 
-    // await page.click('#select2-sales_note_e_document_products_attributes_0_product_id-container');
-    // await page.fill('.select2-search__field', 'cama');
-    // await page.click('.select2-results__option', { hasText: 'Cama matrimonial' });
+    await page.click('#select2-sales_note_e_document_products_attributes_0_product_id-container');
+    await page.fill('.select2-search__field', 'cama');
+    await page.click('.select2-results__option', { hasText: 'Cama matrimonial' });
 
     await page.pause()
     await browser.close()
