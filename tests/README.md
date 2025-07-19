@@ -31,6 +31,8 @@ Para ejecutar el archivo de prueba:
 node qa_notas_ventas.js
 ---
 
+---
+
 ## ⚠️ Alcance del test
 
 Por motivos de tiempo, el test implementa **solo las funciones básicas solicitadas**.  
@@ -50,7 +52,12 @@ Durante el desarrollo de la prueba me encontré con varios desafíos que resolv�
 - Tuve que repasar algunos conceptos de HTML.
 - Esto me permitió asociar correctamente los elementos del DOM con los métodos de Playwright.
 
-### ⏰ 3. Gestión del tiempo
+### 🧪 3. Problemas con la selección de cliente (`select2`)
+- Tuve inconvenientes al intentar automatizar la selección del cliente debido al uso del plugin **Select2**, que genera un dropdown personalizado.
+- Elegí trabajar con **Playwright en su forma básica** (sin utilizar el Test Runner oficial).
+- Esto **limitó el uso de métodos como expect**, y por falta de tiempo **no alcancé a migrar al runner oficial** para habilitar interacciones más avanzadas con elementos complejos como `select2`.
+
+### ⏰ 4. Gestión del tiempo
 - Contaba con compromisos personales previamente agendados.
 - Sin embargo, ajusté mis horarios para cumplir con el plazo de entrega de la prueba.
 
@@ -64,3 +71,4 @@ Me quedo **motivado para seguir aprendiendo más sobre QA Automation** con herra
 ---
 
 > Rodrigo Andrés Ayala Godoy
+
