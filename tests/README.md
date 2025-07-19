@@ -27,7 +27,7 @@ Para ejecutar el archivo de prueba:
 1. Dirígete a la carpeta `tests/` del proyecto.
 2. Ejecuta el siguiente comando en tu terminal:
 
-```bash
+bash
 node qa_notas_ventas.js
 ---
 
