@@ -53,7 +53,7 @@ Durante el desarrollo de la prueba me encontré con varios desafíos que resolv�
 - Esto me permitió asociar correctamente los elementos del DOM con los métodos de Playwright.
 
 ### 🧪 3. Problemas con la selección de cliente (`select2`)
-- Tuve inconvenientes al intentar automatizar la selección del cliente debido al uso del plugin **Select2**, que genera un dropdown personalizado.
+- Tuve inconvenientes al intentar automatizar la selección del cliente debido al uso del elemento **Select2**, que genera un dropdown personalizado.
 - Elegí trabajar con **Playwright en su forma básica** (sin utilizar el Test Runner oficial).
 - Esto **limitó el uso de métodos como expect**, y por falta de tiempo **no alcancé a migrar al runner oficial** para habilitar interacciones más avanzadas con elementos complejos como `select2`.
 
